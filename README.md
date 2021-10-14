@@ -1,11 +1,4 @@
-	local args = {
-    [1] = "[4Ax]Noclip Enabled",
-    [2] = "All"
-}
-
-game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-
-  noclip = false
+        noclip = false
 	game:GetService('RunService').Stepped:connect(function()
 	if noclip then
 	if plr.Character:FindFirstChild('Humanoid') then
