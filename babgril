@@ -1,0 +1,111 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ForNiBs = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Panel = Instance.new("TextLabel")
+local Input = Instance.new("TextBox")
+local CheckSystem = Instance.new("TextButton")
+local CoolThing = Instance.new("TextLabel")
+
+--Properties:
+
+ForNiBs.Name = "ForNiBs"
+ForNiBs.Parent = game.CoreGui
+ForNiBs.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ForNiBs
+Frame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.416824788, 0, 0.350122899, 0)
+Frame.Size = UDim2.new(0, 275, 0, 130)
+
+Panel.Name = "Panel"
+Panel.Parent = Frame
+Panel.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Panel.BorderSizePixel = 0
+Panel.Size = UDim2.new(0, 275, 0, 22)
+Panel.Font = Enum.Font.SourceSans
+Panel.Text = "Bad Whitelist System"
+Panel.TextColor3 = Color3.fromRGB(255, 255, 255)
+Panel.TextSize = 18.000
+
+Input.Name = "Input"
+Input.Parent = Frame
+Input.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Input.BorderSizePixel = 0
+Input.Position = UDim2.new(0.0363636352, 0, 0.340126514, 0)
+Input.Size = UDim2.new(0, 255, 0, 15)
+Input.ClearTextOnFocus = false
+Input.Font = Enum.Font.SourceSans
+Input.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+Input.PlaceholderText = "Enter Your Key Here"
+Input.Text = ""
+Input.TextColor3 = Color3.fromRGB(255, 255, 255)
+Input.TextSize = 14.000
+
+CheckSystem.Name = "CheckSystem"
+CheckSystem.Parent = Frame
+CheckSystem.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CheckSystem.BorderSizePixel = 0
+CheckSystem.Position = UDim2.new(0.276363641, 0, 0.620013177, 0)
+CheckSystem.Size = UDim2.new(0, 122, 0, 17)
+CheckSystem.Font = Enum.Font.SourceSans
+CheckSystem.Text = "Whitelist"
+CheckSystem.TextColor3 = Color3.fromRGB(0, 0, 0)
+CheckSystem.TextSize = 14.000
+
+CoolThing.Name = "CoolThing"
+CoolThing.Parent = Frame
+CoolThing.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CoolThing.Position = UDim2.new(0.0363636352, 0, 0.446153611, 0)
+CoolThing.Size = UDim2.new(0, 6, 0, 1)
+CoolThing.Font = Enum.Font.SourceSans
+CoolThing.Text = ""
+CoolThing.TextColor3 = Color3.fromRGB(0, 0, 0)
+CoolThing.TextSize = 14.000
+
+-- Scripts:
+
+local function WUZT_fake_script() -- ForNiBs.LocalScript 
+	local script = Instance.new('LocalScript', ForNiBs)
+
+	local Frame = script.Parent.Frame
+	local CheckSystem = script.Parent.Frame.CheckSystem
+	local CoolThing = script.Parent.Frame.CoolThing
+	local Input = script.Parent.Frame.Input
+	CoolThing.Visible = false
+	
+	--Those local scripts create a home so yea
+	Input.MouseEnter:Connect(function()
+		CoolThing.Visible = true
+		CoolThing:TweenSize(UDim2.new(0, 255,0, 1))
+		
+	end)
+	
+	Input.MouseLeave:Connect(function()
+		CoolThing:TweenSize(UDim2.new(0, 1,0, 1))
+		wait(1)
+		CoolThing.Visible = false
+		
+	end)
+	
+	CheckSystem.MouseButton1Down:Connect(function()
+		if Input.Text == "4x3x" then
+			Frame:TweenPosition(UDim2.new(0.417, 0.417 ,0 , 1080))
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Loaded!";
+		Text = "Enjoy Exploiting!";
+		Duration = 3;
+		})
+		
+			wait(2)
+			Frame.Visible = false
+			
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Schervi/FloppaHub/main/FloppaHubMain.lua"))()
+		end
+	end)
+end
+coroutine.wrap(WUZT_fake_script)()
