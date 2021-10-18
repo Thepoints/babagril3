@@ -1,0 +1,941 @@
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Thepoints/babagril3/main/urmom", true))()
+
+local args = {
+    [1] = "4Ax SuccessFully Load Pro Detected😎",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = 'Join Our Discord Server';
+    Text = 'Our Discord server link has been copied to your clipboard';
+    Duration = 20;
+    })
+    setclipboard('discord.gg/nhw2aV7wbt')
+
+    print("PRO DETECTED!!!!!!!!!!!!")
+
+
+local UILibrary = loadstring(game:HttpGet("https://pastebin.com/raw/V1ca2q9s"))()
+
+local MainUI = UILibrary.Load("4Ax V3")               
+local FirstPage = MainUI.AddPage("Home")
+local FirstLabel = FirstPage.AddLabel("Section 1")
+local FirstButton = FirstPage.AddButton("Fly(C)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cjdjmj/fly/main/README.md", true))()
+end)
+local FirstButton = FirstPage.AddButton("Rejoin", function()
+    TeleportService = game:GetService("TeleportService")
+    placeID_1 = 2788229376  --Da hood
+    wait()
+    TeleportService:Teleport(placeID_1, plr)
+end)
+local FirstButton = FirstPage.AddButton("Unjail", function()
+    if game:GetService("Players").LocalPlayer.DataFolder.Currency.Value >= 125 then
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-270.94, 20.327, -242.38)
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-270.94, 20.327, -242.38)
+        wait()
+        fireclickdetector(game:GetService("Workspace").Ignored.Shop["[Key] - $125"].ClickDetector)
+        wait(.1)
+        fireclickdetector(game:GetService("Workspace").Ignored.Shop["[Key] - $125"].ClickDetector)
+        fireclickdetector(game:GetService("Workspace").Ignored.Shop["[Key] - $125"].ClickDetector)
+        repeat
+            wait()
+        until game:GetService("Players").LocalPlayer.Backpack:FindFirstChild('[Key]')
+        local Hum = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass('Humanoid')
+        if Hum.Health > 0 then
+            key1 = game:GetService("Players").LocalPlayer.Backpack:FindFirstChild('[Key]')
+            if key1 then
+                for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+                    if v.Name == '[Key]' then
+                        v.Parent = game.Players.LocalPlayer.Character
+                    end
+                end
+                for i, v in pairs(game:GetService"Players".LocalPlayer.Character:GetChildren()) do
+                    if v:isA("Tool") then
+                        for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+                            if v.Name == '[Key]' then
+                                v.Parent = game.Players.LocalPlayer.Character
+                            end
+                        end
+                        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-485.668, 23.631, -285.169)
+                        for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+                            if v.Name == '[Key]' then
+                                v:Activate()
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+end);
+local FirstButton = FirstPage.AddButton("MoneyStuff", function()
+    local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+	
+    local win = DiscordLib:Window("COMING SOON")
+
+    local serv = win:Server("4Ax", "")
+
+
+    local tgls = serv:Channel("Money Stuff!")
+
+
+tgls:Toggle("1000",false, function()
+
+    end)
+
+
+
+
+
+
+
+
+    tgls:Toggle("Equip Money Guns",false, function(bool)
+        
+    end)
+
+
+
+
+    tgls:Toggle("Money Gun Activate",false, function(bool)
+        
+    end)
+
+
+
+    win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
+end)
+local FirstButton = FirstPage.AddButton("Reset",function()
+    plr.Character:FindFirstChild('RagdollConstraints'):Destroy()
+    plr.Character.HumanoidRootPart:Destroy()
+    plr.Character.Head:Destroy()
+    plr.Character.Torso:Destroy()
+end)
+local FirstButton = FirstPage.AddButton("ForceReset",function()
+    for i, v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+        if v:IsA("BasePart") then
+            v:Destroy()
+        end
+    end
+end)
+plr = game:GetService('Players').LocalPlayer
+function FogSaved()
+    wait()
+    game:GetService('Lighting').FogEnd = 500
+end
+toggled1 = false
+local FirstToggle = FirstPage.AddToggle("ToogleFog", false, function(Value)
+    if toggled1 == false then	
+        wait()
+        game:GetService('Lighting').FogEnd = 900000000
+        toggled1 = true
+    elseif toggled1 == true then
+        wait()
+        FogSaved()
+        toggled1 = false
+    end
+end)
+function BrightSaved()
+    wait()
+    game:GetService('Lighting').Brightness = 1
+    game:GetService('Lighting').GlobalShadows = true
+end
+toggled2 = false
+local FirstToggle = FirstPage.AddToggle("ToogleBrightness", false, function(Value)
+    if toggled2 == false then	
+        wait()
+        game:GetService('Lighting').Brightness = 7
+        game:GetService('Lighting').GlobalShadows = false
+        toggled2 = true
+    elseif toggled2 == true then
+        wait()
+        BrightSaved()
+        toggled2 = false
+    end
+end)
+toggled3 = false
+local FirstToggle = FirstPage.AddToggle("ToogleAfk", false, function(Value)
+    function ON()
+        wait()
+        script.Parent.Text = 'SAFE AFK(ON)'
+        toggled3 = true
+    end		
+    function OFF()
+        wait()
+        script.Parent.Text = 'SAFE AFK(OFF)'
+        toggled3 = false  
+    end
+    
+    if toggled3 == false then 
+        ON()
+        game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-157.329, -78.224, 140.215)
+        wait()
+        game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-157.329, -78.224, 140.215)
+    elseif toggled3 == true then 
+        OFF()
+        game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-485.668, 23.631, -285.169)
+        wait()
+        game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-485.668, 23.631, -285.169)
+    end
+end)
+local FirstSlider = FirstPage.AddSlider("Speed", {Min = 0, Max = 255, Def = 50}, function(ws)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = ws
+end)
+local FirstLabel = FirstPage.AddLabel("Section 2")
+
+local FirstButton = FirstPage.AddButton("Auto Medium Armor",function()
+    while wait() do
+        if game.Players.LocalPlayer.Character.BodyEffects.Armor.Value < 10 then
+            _G.savedhumanoidpos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+            game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-606.316345, 10.3496914, -788.285034)
+            wait(.5)
+            fireclickdetector(game.Workspace.Ignored.Shop['[Medium Armor] - $1000'].ClickDetector)
+            wait()
+            fireclickdetector(game.Workspace.Ignored.Shop['[Medium Armor] - $1000'].ClickDetector)
+            wait(.5)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(_G.savedhumanoidpos)
+        end
+    end		
+end);
+local FirstButton = FirstPage.AddButton("Auto High Armor",function()
+    while wait() do
+        if game.Players.LocalPlayer.Character.BodyEffects.Armor.Value < 10 then
+            _G.savedhumanoidpos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+            game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-933.437,-28.501,567.187)
+            wait(.5)
+            fireclickdetector(game.Workspace.Ignored.Shop['[High-Medium Armor] - $2300'].ClickDetector)
+            wait()
+            fireclickdetector(game.Workspace.Ignored.Shop['[High-Medium Armor] - $2300'].ClickDetector)
+            wait(.5)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(_G.savedhumanoidpos)
+        end
+    end		
+end);
+local FirstButton = FirstPage.AddButton("knifePick", function()
+    char = game:GetService('Players').LocalPlayer.Character
+		-------------------------------------
+		function GetKnife()
+			wait(.1)
+			char.HumanoidRootPart.CFrame = CFrame.new(-680.2, 19.75, -254.97)
+			wait()
+			char.HumanoidRootPart.CFrame = CFrame.new(-115.495, 19.756, -453.45)
+			wait()
+			char.HumanoidRootPart.CFrame = CFrame.new(-418.208, 19.25, -748.694)
+			wait()
+			char.HumanoidRootPart.CFrame = CFrame.new(-418.208, 19.25, -748.694)
+			wait()
+			char.HumanoidRootPart.CFrame = CFrame.new(33, 19.75, -184.6)
+			wait()
+			char.HumanoidRootPart.CFrame = CFrame.new(243.495, 62, -450.5)
+			wait()
+			char.HumanoidRootPart.CFrame = CFrame.new(-103.53, 19.75, -220.21)
+			wait()
+			char.HumanoidRootPart.CFrame = CFrame.new(-581.775, 19.7549, -485.23)
+			wait()
+			char.HumanoidRootPart.CFrame = CFrame.new(-399.655, 19.7552, -461.55)
+			wait()
+		end
+	
+		wait()
+		local X = char.HumanoidRootPart.CFrame.X
+		local Y = char.HumanoidRootPart.CFrame.Y
+		local Z = char.HumanoidRootPart.CFrame.Z
+		GetKnife()
+		repeat GetKnife() until plr.Backpack:FindFirstChild('[Knife]') and plr.Backpack:FindFirstChild('[LockPicker]')
+		char.HumanoidRootPart.CFrame = CFrame.new(X,Y+5,Z)
+	end)
+
+local FirstButton = FirstPage.AddButton("Speed(V)", function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/Thepoints/Haru4AmX/main/as"), true))()
+end)
+local FirstButton = FirstPage.AddButton("AntiBag", function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/Thepoints/Haru4AmX/main/ss"), true))()
+end)
+local FirstButton = FirstPage.AddButton("Fe Korblox", function()
+    local ply = game.Players.LocalPlayer
+		local chr = ply.Character
+		chr.RightLowerLeg.MeshId = "902942093"
+		chr.RightLowerLeg.Transparency = "1"
+		chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+		chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+		chr.RightFoot.MeshId = "902942089"
+		chr.RightFoot.Transparency = "1"
+	end)
+local FirstButton = FirstPage.AddButton("Walk On Wall",function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Thepoints/4XgUiProJecT/main/sssssssss", true))()
+end)
+local FirstButton = FirstPage.AddButton("Show Ping",function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Thepoints/4XgUiProJecT/main/d", true))()
+end)
+
+local SecondPage = MainUI.AddPage("Misc")
+
+local FirstButton = SecondPage.AddButton("AntiAfk Kick",function()
+    	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+	   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	   wait(1)
+	   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	            game.StarterGui:SetCore("SendNotification", {
+	                Title = "Anti - AFK Made By Haru/4x#1111";
+	                Text = "Enabled (No timeout)";
+	                 Duration = 20;
+			                  })
+	end)
+local FirstButton = SecondPage.AddButton("HideName",function() 
+    plr.leaderstats:Destroy()
+		plr.DataFolder.Officer:Destroy()
+	end)
+local FirstButton = SecondPage.AddButton("ToolsWhileCuffed",function() 
+    plr.Character.BodyEffects.Cuff.Value = false
+		plr.Character.BodyEffects.Cuff:Destroy()
+	end)
+local FirstButton = SecondPage.AddButton("Tp(T)",function() 
+        plr = game.Players.LocalPlayer
+         
+        hum = plr.Character.HumanoidRootPart
+         
+        mouse = plr:GetMouse()
+         
+         
+         
+        mouse.KeyDown:connect(function(key)
+         
+        if key == "t" then
+         
+        if mouse.Target then
+         
+        hum.CFrame = CFrame.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z)
+         
+        end
+         
+        end
+        end)
+        end)
+local FirstButton = SecondPage.AddButton("SuperZoom/No Zoom Limit",function()
+    plr.CameraMaxZoomDistance = 99999999999
+	plr.CameraMinZoomDistance = 0
+end)
+local FirstButton = SecondPage.AddButton("Aimlock",function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/coolmanstrongsuperman/lol/main/TheWare", true))()
+end)
+local FirstButton = SecondPage.AddButton("AntiBan",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Thepoints/4AX/main/sssssssssssssssssssss", true))()
+end)
+
+local ThirdPage = MainUI.AddPage("Combat")
+
+local FirstButton = ThirdPage.AddButton("FreeFist(Q)",function() 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cjdjmj/freefist/main/README.md", true))()
+end)
+local FirstButton = ThirdPage.AddButton("ToolReach",function() 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cjdjmj/toolreach/main/README.md", true))()
+end)
+local FirstButton = ThirdPage.AddButton("FistReach",function() 
+    loadstring(game:HttpGet('https://pastebin.com/raw/aZHK690D'))()
+end)
+local FirstButton = ThirdPage.AddButton("FastRpg",function() 
+    local speed = 200
+		local plr = game.Players.LocalPlayer
+	
+		game.Workspace.Ignored.ChildAdded:connect(function(child)
+			wait()
+			if child.Name == "Launcher" and math.abs((child.Position-plr.Character.HumanoidRootPart.Position).Magnitude)<30 then
+				child:WaitForChild("BodyVelocity"):Destroy()
+				Instance.new("BodyVelocity", child).Velocity = (child.CFrame * CFrame.new(0, -speed, 0)).p - child.CFrame.p
+				while child and child.Parent ~= nil do
+					game.RunService.Stepped:wait()
+					setsimulationradius(math.huge^math.huge, math.huge)
+				end
+			end
+		end)
+	end)
+local FirstButton = ThirdPage.AddButton("HOW TO HAVE GAY SEX IN DA HOOD(OP)",function() 
+    local plr = game.Players.LocalPlayer
+
+plr:Kick('imagine try to be gay😂')
+end)
+
+local FourthPage = MainUI.AddPage("Animation")
+local FirstLabel = FourthPage.AddLabel("Animation")
+
+local FirstButton = FourthPage.AddButton("Astronaut",function()
+    local Animate = game.Players.LocalPlayer.Character.Animate
+             Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=891621366"
+             Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=891633237"
+             Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=891667138"
+             Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=891636393"
+             Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=891627522"
+             Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=891609353"
+             Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=891617961"
+              game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end)
+local FirstButton = FourthPage.AddButton("Bubbly",function()
+    local Animate = game.Players.LocalPlayer.Character.Animate
+             Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=910004836"
+             Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=910009958"
+             Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=910034870"
+             Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=910025107"
+             Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=910016857"
+             Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=910001910"
+             Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=910030921"
+             Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=910028158"
+             game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end)
+local FirstButton = FourthPage.AddButton("Cartoony",function()
+    local Animate = game.Players.LocalPlayer.Character.Animate
+             Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=742637544"
+             Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=742638445"
+             Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=742640026"
+             Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=742638842"
+             Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=742637942"
+             Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=742636889"
+             Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=742637151"
+             game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end)
+local FirstButton = FourthPage.AddButton("Elder",function()
+    local Animate = game.Players.LocalPlayer.Character.Animate
+    Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=845397899"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=845400520"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=845403856"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=845386501"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=845398858"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=845392038"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=845396048"
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end)
+local FirstButton = FourthPage.AddButton("Knight",function()
+    local Animate = game.Players.LocalPlayer.Character.Animate
+    Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=657595757"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=657568135"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=657552124"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=657564596"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=658409194"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=658360781"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=657600338"
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end)
+local FirstButton = FourthPage.AddButton("Levitation",function()
+    local Animate = game.Players.LocalPlayer.Character.Animate
+    Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616006778"
+    Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616008087"
+    Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616013216"
+    Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616010382"
+    Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616008936"
+    Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616003713"
+    Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616005863"
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    end)
+local FirstButton = FourthPage.AddButton("Mage",function()
+    local Animate = game.Players.LocalPlayer.Character.Animate
+    Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=707742142"
+    Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=707855907"
+    Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=707897309"
+    Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=707861613"
+    Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=707853694"
+    Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=707826056"
+    Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=707829716"
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    end)
+local FirstButton = FourthPage.AddButton("Pirate",function()
+    local Animate = game.Players.LocalPlayer.Character.Animate
+    Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=750781874"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=750782770"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=750785693"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=750783738"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=750782230"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=750779899"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=750780242"
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end)
+local FirstButton = FourthPage.AddButton("Ninja",function()
+    local Animate = game.Players.LocalPlayer.Character.Animate
+    Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=656117400"
+    Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=656118341"
+    Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=656121766"
+    Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=656118852"
+    Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=656117878"
+    Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=656114359"
+    Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=656115606"
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    end)
+local FirstButton = FourthPage.AddButton("Robot",function()
+        local Animate = game.Players.LocalPlayer.Character.Animate
+        Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616088211"
+        Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616089559"
+        Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616095330"
+        Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616091570"
+        Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616090535"
+        Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616086039"
+        Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616087089"
+        game.Players.LocalPlayer.Character.Humanoid.Jump = true
+        end)
+local FirstButton = FourthPage.AddButton("Stylish",function()
+    local Animate = game.Players.LocalPlayer.Character.Animate
+    Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616136790"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616138447"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616146177"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616140816"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616139451"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616133594"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616134815"
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end)
+local FirstButton = FourthPage.AddButton("Superhero",function()
+    local Animate = game.Players.LocalPlayer.Character.Animate
+    Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616111295"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616113536"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616122287"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616117076"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616115533"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616104706"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616108001"
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end)
+local FirstButton = FourthPage.AddButton("Toy",function()
+    local Animate = game.Players.LocalPlayer.Character.Animate
+    Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=782841498"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=782845736"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=782843345"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=782842708"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=782847020"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=782843869"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=782846423"
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end)
+local FirstButton = FourthPage.AddButton("Vampire",function()
+    local Animate = game.Players.LocalPlayer.Character.Animate
+    Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1083445855"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1083450166"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1083473930"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1083462077"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1083455352"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1083439238"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1083443587"
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end)
+local FirstButton = FourthPage.AddButton("WereWolf",function()
+    local Animate = game.Players.LocalPlayer.Character.Animate
+    Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1083195517"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1083214717"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1083178339"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1083216690"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1083218792"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1083182000"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1083189019"
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end)
+local FirstButton = FourthPage.AddButton("Zombie",function()
+    local Animate = game.Players.LocalPlayer.Character.Animate
+    Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616158929"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616160636"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616168032"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616163682"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616161997"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616156119"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616157476"
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end)
+
+local FifthPage = MainUI.AddPage("Crash")
+
+local FirstLabel = FifthPage.AddLabel("Crash!")
+
+local FirstButton = FifthPage.AddButton("Start Crash!",function()
+    Money = game:GetService("Players").LocalPlayer.DataFolder.Currency.Value
+    Tool = Instance.new("Tool", game:GetService("Players").LocalPlayer.Backpack)
+    Tool.Name = "Crash"
+    Tool.ToolTip = "Hold to buy tasers"
+
+    wait(0.5)
+
+    game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Crash").Parent = game:GetService("Players").LocalPlayer.Character
+    game:GetService("Players").LocalPlayer.PlayerGui.Framework.CurrencySound.Volume = 0
+
+    for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
+        if v:IsA("Tool") and v.Name == "[Cranberry]" then
+            if v.Handle.Sound.Volume ~= 0 then
+                v.Handle.Sound.Volume = 0
+            end
+        end
+    end
+
+    game:GetService("RunService").Stepped:Connect(function()
+        if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Crash") then
+            HoldingCrash = true
+        end
+        if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Crash") then
+            HoldingCrash = false
+        end
+        if HoldingCrash == true then
+            if Money > 1000 then 
+                game:GetService("ReplicatedStorage").MainEvent:FireServer("Block", true)
+                wait()
+                game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Ignored.Shop["[Cranberry] - $3"].Head.CFrame
+                wait()
+                game:GetService("Players").LocalPlayer.Character.Humanoid:ChangeState(11)
+                wait(1)
+                fireclickdetector(game:GetService("Workspace").Ignored.Shop["[Cranberry] - $3"].ClickDetector)
+                wait()
+                game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("[Cranberry]").Parent = game:GetService("Players").LocalPlayer.Character
+                wait()
+                Sound()
+                wait()
+                for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
+                    if v:IsA("Tool") and v.Name == "[Lemonade]" then
+                        v:Activate()
+                    end
+                end
+            end
+        end
+        if HoldingCrash == true then
+            if Money <= 10000 then 
+                game:GetService("ReplicatedStorage").MainEvent:FireServer("Block", true)
+                wait()
+                game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Ignored.Shop["[Cranberry] - $3"].Head.CFrame
+                wait()
+                game:GetService("Players").LocalPlayer.Character.Humanoid:ChangeState(11)
+                wait()
+                Sound()
+                wait()
+                for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
+                    if v:IsA("Tool") and v.Name == "[Cranberry]" then
+                        v:Activate()
+                    end
+                end
+            end
+        end
+    end)
+
+    wait()
+    for i, v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+        if v:IsA("BasePart") then
+            v:Destroy()
+        end
+    end
+    wait(1222)
+    for i, v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+        if v:IsA("BasePart") then
+            v:Destroy()
+        end
+    end
+end)
+
+local SixthPage = MainUI.AddPage("Teleport")
+local FirstButton = SixthPage.AddButton("Admin Base",function()
+    game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-729.895, -37.642, -885.8)
+end)
+local FirstButton = SixthPage.AddButton("Bank",function()
+    game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-485.668, 23.631, -285.169)
+end)
+local FirstButton = SixthPage.AddButton("Boxing",function()
+    game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-236.006, 23.151, -1120.531)
+end)
+local FirstButton = SixthPage.AddButton("Gym",function()
+    game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-75.795, 23.701, -633.72)
+end)
+local FirstButton = SixthPage.AddButton("GunShop 1",function()
+    game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-582, 7.172, -739.015);
+end)
+local FirstButton = SixthPage.AddButton("GunShop 2",function()
+    game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(475.022, 48.005, -603.737);
+end)
+local FirstButton = SixthPage.AddButton("PhoneShop",function()
+    game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-120.121, 22.946, -870.425)
+end)
+local FirstButton = SixthPage.AddButton("Sewer",function()
+    game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(112.622, -26.212, -277.321)
+end)
+local FirstButton = SixthPage.AddButton("Prison",function()
+    game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-294.162, 22.644, -111.716)
+end)
+local FirstButton = SixthPage.AddButton("UFO",function()
+    game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(71.565, 142.926, -690.33)
+end)
+local FirstButton = SixthPage.AddButton("Casino",function()
+    game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-879.277, 21.254, -190.199);
+end)
+local FirstButton = SixthPage.AddButton("Shop",function()
+    game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-210.255, 21.674, -823.16)
+end)
+
+local SeventhPage = MainUI.AddPage("Target")
+
+local FirstLabel = SeventhPage.AddLabel("Coming Soon!")
+
+local EighthPage = MainUI.AddPage("AutoBuy")
+
+local FirstButton = EighthPage.AddButton("Revolver $1300",function()
+    local savedrevolverpos = plr.Character.HumanoidRootPart.Position
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(-638.161,21.757,-119.717)
+    wait(.2)
+    fireclickdetector(game.Workspace.Ignored.Shop['[Revolver] - $1300'].ClickDetector)
+    fireclickdetector(game.Workspace.Ignored.Shop['[Revolver] - $1300'].ClickDetector)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedrevolverpos)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedrevolverpos)
+    end)
+local FirstButton = EighthPage.AddButton("Revolver ammo $75",function()
+    local savedrevolverammopos = plr.Character.HumanoidRootPart.Position
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(-647.178,21.757,-118.300)
+    wait(.2)
+    fireclickdetector(game.Workspace.Ignored.Shop['12 [Revolver Ammo] - $75'].ClickDetector)
+    fireclickdetector(game.Workspace.Ignored.Shop['12 [Revolver Ammo] - $75'].ClickDetector)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedrevolverammopos)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedrevolverammopos)
+    end)
+local FirstButton = EighthPage.AddButton("Shotgun $1250",function()
+    local savedshotgunpos = plr.Character.HumanoidRootPart.Position
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(-805.711, -46.24, -936.234)
+    wait(.2)
+    fireclickdetector(game.Workspace.Ignored.Shop['[Shotgun] - $1250'].ClickDetector)
+    fireclickdetector(game.Workspace.Ignored.Shop['[Shotgun] - $1250'].ClickDetector)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedshotgunpos)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedshotgunpos)
+end)
+local FirstButton = EighthPage.AddButton("Shotgun ammo $60",function()
+    local savedshotgunammopos = plr.Character.HumanoidRootPart.Position
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(-802.967,-39.641,-931,698)
+    wait(.2)
+    fireclickdetector(game.Workspace.Ignored.Shop['20 [Shotgun Ammo] - $60'].ClickDetector)
+    fireclickdetector(game.Workspace.Ignored.Shop['20 [Shotgun Ammo] - $60'].ClickDetector)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedshotgunammopos)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedshotgunammopos)
+end)
+local FirstButton = EighthPage.AddButton("Bat $250",function()
+    local savedbatpos = plr.Character.HumanoidRootPart.Position
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(380.932, 44.318, -284.746)
+    wait(.2)
+    fireclickdetector(game.Workspace.Ignored.Shop['[Bat] - $250'].ClickDetector)
+    fireclickdetector(game.Workspace.Ignored.Shop['[Bat] - $250'].ClickDetector)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedbatpos)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedbatpos)
+end)
+local FirstButton = EighthPage.AddButton("Silencer $400",function()
+    local savedsilencerpos = plr.Character.HumanoidRootPart.Position
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(-891.793,-32.641,-528.639)
+    wait(.2)
+    fireclickdetector(game.Workspace.Ignored.Shop['[Silencer] - $400'].ClickDetector)
+    fireclickdetector(game.Workspace.Ignored.Shop['[Silencer] - $400'].ClickDetector)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedsilencerpos)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedsilencerpos)
+end)
+local FirstButton = EighthPage.AddButton("Silencer ammo $50",function()
+    local savedsilencerammopos = plr.Character.HumanoidRootPart.Position
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(-891.793,-32.641,-528.639)
+    wait(.1)
+    fireclickdetector(game.Workspace.Ignored.Shop['25 [Silencer Ammo] - $50'].ClickDetector)
+    fireclickdetector(game.Workspace.Ignored.Shop['25 [Silencer Ammo] - $50'].ClickDetector)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedsilencerammopos)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedsilencerammopos)
+end)
+local FirstButton = EighthPage.AddButton("Double-Barrel SG $1400",function()
+    local saveddoublebarrelsgpos = plr.Character.HumanoidRootPart.Position
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(-868.665,-32.641,-521.254)
+    wait(.2)
+    fireclickdetector(game.Workspace.Ignored.Shop['[Double-Barrel SG] - $1400'].ClickDetector)
+    fireclickdetector(game.Workspace.Ignored.Shop['[Double-Barrel SG] - $1400'].ClickDetector)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(saveddoublebarrelsgpos)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(saveddoublebarrelsgpos)
+end)
+local FirstButton = EighthPage.AddButton("Double-Barrel SG ammo $60",function()
+    local saveddoublebarrelsgammopos = plr.Character.HumanoidRootPart.Position
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(-875.317,-32.641,-521.782)
+    wait(.1)
+    fireclickdetector(game.Workspace.Ignored.Shop['18 [Double-Barrel SG Ammo] - $60'].ClickDetector)
+    fireclickdetector(game.Workspace.Ignored.Shop['18 [Double-Barrel SG Ammo] - $60'].ClickDetector)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(saveddoublebarrelsgammopos)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(saveddoublebarrelsgammopos)
+end)
+local FirstButton = EighthPage.AddButton("Pizza $5",function()
+    local savedpizzapos = plr.Character.HumanoidRootPart.Position
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(-788.760,-39.641,-940.288)
+    wait(.2)
+    fireclickdetector(game.Workspace.Ignored.Shop['[Pizza] - $5'].ClickDetector)
+    fireclickdetector(game.Workspace.Ignored.Shop['[Pizza] - $5'].ClickDetector)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedpizzapos)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedpizzapos)
+end)
+local FirstButton = EighthPage.AddButton("Cranberry $3",function()
+    local savedcranberrypos = plr.Character.HumanoidRootPart.Position
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(-781.941,-39.641,-938.780)
+    wait(.2)
+    fireclickdetector(game.Workspace.Ignored.Shop['[Cranberry] - $3'].ClickDetector)
+    fireclickdetector(game.Workspace.Ignored.Shop['[Cranberry] - $3'].ClickDetector)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedcranberrypos)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedcranberrypos)
+end)      
+local FirstButton = EighthPage.AddButton("Chicken $7",function()
+    local savedchickenpos = plr.Character.HumanoidRootPart.Position
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(-793.047,-39.641,-937.878)
+    wait(.2)
+    fireclickdetector(game.Workspace.Ignored.Shop['[Chicken] - $7'].ClickDetector)
+    fireclickdetector(game.Workspace.Ignored.Shop['[Chicken] - $7'].ClickDetector)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedchickenpos)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedchickenpos)
+end) 
+local FirstButton = EighthPage.AddButton("RPG $6000",function()
+    local savedrpgpos = plr.Character.HumanoidRootPart.Position
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(-792.661,-39.641,-932.668)
+    wait(.2)
+    fireclickdetector(game.Workspace.Ignored.Shop['[RPG] - $6000'].ClickDetector)
+    fireclickdetector(game.Workspace.Ignored.Shop['[RPG] - $6000'].ClickDetector)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedrpgpos)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedrpgpos)
+end) 
+local FirstButton = EighthPage.AddButton("RPG ammo $1000",function()
+    local savedrpgammopos = plr.Character.HumanoidRootPart.Position
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(118.966,-26.742,-274.640)
+    wait(.2)
+    fireclickdetector(game.Workspace.Ignored.Shop['[RPG Ammo] - $1000'].ClickDetector)
+    fireclickdetector(game.Workspace.Ignored.Shop['[RPG Ammo] - $1000'].ClickDetector)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedrpgammopos)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedrpgammopos)
+end) 
+local FirstButton = EighthPage.AddButton("Flamethrower $25000",function()
+    local savedflamethrowerpos = plr.Character.HumanoidRootPart.Position
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(-156.940,53.808,-102.335)
+    wait(.2)
+    fireclickdetector(game.Workspace.Ignored.Shop['[Flamethrower] - $25000'].ClickDetector)
+    fireclickdetector(game.Workspace.Ignored.Shop['[Flamethrower] - $25000'].ClickDetector)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedflamethrowerpos)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedflamethrowerpos)
+end) 
+local FirstButton = EighthPage.AddButton("Flamethrower Ammo $1550")
+
+local NinePage = MainUI.AddPage("AutoFarm")
+
+local FirstButton = NinePage.AddButton("Autofarm(Reset to stop)",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Thepoints/da-script/main/4AxAutofarmlol",true))();
+end)
+
+local TenPage = MainUI.AddPage("Trash talk")
+
+local FirstButton = TenPage.AddButton("Kid",function()
+    local args = {
+        [1] = "kid",
+        [2] = "All"
+    }
+    
+    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end)
+local FirstButton = TenPage.AddButton("No aim",function()
+    local args = {
+        [1] = "No Aim",
+        [2] = "All"
+    }
+    
+    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end)
+local FirstButton = TenPage.AddButton("Get life kid",function()
+    local args = {
+        [1] = "Get life kid",
+        [2] = "All"
+    }
+    
+    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end)
+local FirstButton = TenPage.AddButton("Learn how to stomp",function()
+    local args = {
+        [1] = "learn how to stomp",
+        [2] = "All"
+    }
+    
+    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end)
+local FirstButton = TenPage.AddButton("L NO AIM LMAO",function()
+    local args = {
+        [1] = "L NO AIM LMAOZ",
+        [2] = "All"
+    }
+    
+    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end)
+local FirstButton = TenPage.AddButton("Imagine say nice lock💀",function()
+    local args = {
+        [1] = "Imagine say nice lock💀",
+        [2] = "All"
+    }
+    
+    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end)
+local FirstButton = TenPage.AddButton("Kid wit no aim mad💀",function()
+    local args = {
+        [1] = "Kid wit no aim mad💀",
+        [2] = "All"
+    }
+    
+    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end)
+local FirstButton = TenPage.AddButton("Go play adopt me lmao",function()
+    local args = {
+        [1] = "Go play adopt me lmaoz",
+        [2] = "All"
+    }
+    
+    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end)
+local FirstButton = TenPage.AddButton("Stay mad L",function()
+    local args = {
+        [1] = "Stay mad LL",
+        [2] = "All"
+    }
+    
+    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end)
+local FirstButton = TenPage.AddButton("Adopted Child",function()
+    local args = {
+        [1] = "Adopted Child",
+        [2] = "All"
+    }
+    
+    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end)
+local FirstButton = TenPage.AddButton("Dog Wit no aim",function()
+    local args = {
+        [1] = "Dog Wit no aim",
+        [2] = "All"
+    }
+    
+    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end)
+local FirstButton = TenPage.AddButton("Ez",function()
+    local args = {
+        [1] = "Ez",
+        [2] = "All"
+    }
+    
+    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end)
+local FirstButton = TenPage.AddButton("KID MAD LOL",function()
+    local args = {
+        [1] = "KID MAD LOL",
+        [2] = "All"
+    }
+    
+    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end)
+local FirstButton = TenPage.AddButton("L",function()
+    local args = {
+        [1] = "L",
+        [2] = "All"
+    }
+    
+    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end)
+
+local ElevenPage = MainUI.AddPage("Credit!")
+
+local FirstLabel = ElevenPage.AddLabel("Owner - 4x#1111")
+
+local FirstLabel = ElevenPage.AddLabel("Co-Owner - 3x#1729")
+
+local FirstLabel = ElevenPage.AddLabel("Helper - put23#4517")
+
+local FirstLabel = ElevenPage.AddLabel("Server Manager/Helper - avacadocat69#934")
+
+local FirstLabel = ElevenPage.AddLabel("Join Our Discord Server For New V4 Update!")
